@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export function Header() {
   return (
     <div className="flex justify-between">
       <div className="flex gap-8">
-        <span>About Me</span>
+        <Link href="/components/navigation/aboutme">About Me</Link>
         <span>Portfolio</span>
         <span>Services</span>
         <span>Blog</span>
