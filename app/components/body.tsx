@@ -5,13 +5,13 @@ export function Body() {
     <div className="grid grid-cols-2">
       <div className="flex flex-col justify-between pb-30">
         <div className="flex gap-5 pl-4 mt-12">
-          {["1", "2"].map((member) => (
+          {["200", "50"].map((member) => (
             <div key={member} className="flex align-top gap-0.5">
               <span className="text-xl">+</span>
               <div className="flex flex-col">
-                <span className="text-4xl">{member == "1" ? 200 : 50}</span>
+                <span className="text-4xl">{member}</span>
                 <span className="text-sm">
-                  {member == "1" ? "Project completed" : "Startup raised"}
+                  {member == "200" ? "Project completed" : "Startup raised"}
                 </span>
               </div>
             </div>

@@ -5,10 +5,15 @@ export function Header() {
   return (
     <div className="flex justify-between">
       <div className="flex gap-8">
-        <Link href="/components/navigation/aboutme">About Me</Link>
-        <span>Portfolio</span>
-        <span>Services</span>
-        <span>Blog</span>
+        {
+          ["About Me", "Portfolio", "Services", "Blog"].map(
+            (member) => (
+              <Link key={member} href={`/components/navigation/${member.toLowerCase().replace(" ", "")}`}>
+                {member}
+              </Link>
+            )
+          )
+        }
       </div>
       <div className="flex items-center">
         <span className=" underline">Book a Call</span>
