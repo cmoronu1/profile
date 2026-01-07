@@ -1,11 +1,12 @@
 import { Earth, Redo, Sparkle } from "lucide-react";
 import { GSSP_COMPONENT_MEMBER_ERROR } from "next/dist/lib/constants";
 import Image from "next/image";
+import { Experience } from "./experience";
 
 export default function AboutMe() {
   return (
-    <div className=" h-dvh bg-[#f3f3f3]">
-      <div className="grid grid-cols-3 m-auto pt-5 px-16">
+    <div className="pt-5 px-16 bg-[white]">
+      <div className=" bg-[#f3f3f3] grid grid-cols-3 m-auto pt-3 px-3 ">
         <div className="flex flex-col gap-2 justify-between">
           <h1 className="text-[black] text-3xl">About Me</h1>
           <p className="text-[#7f7f7f]">
@@ -32,7 +33,6 @@ export default function AboutMe() {
               alt="About Me Photo"
               width={220}
               height={160}
-              
               className="rounded-xl"
             />
           </div>
@@ -49,10 +49,8 @@ export default function AboutMe() {
           </div>
 
           {[1, 2].map((member) => (
-            <div  key={member} className="flex gap-2">
-              <div
-                className="border rounded-[50%] h-8 w-8 flex items-center justify-center bg-[black]"
-              >
+            <div key={member} className="flex gap-2">
+              <div className="border rounded-[50%] h-8 w-8 flex items-center justify-center bg-[black]">
                 <Sparkle size={15} strokeWidth={1} fill="white" />
               </div>
               <p className="text-[#7e7e7e] max-w-[90%]">
@@ -66,6 +64,7 @@ export default function AboutMe() {
           ))}
         </div>
       </div>
+      <Experience />
     </div>
   );
 }
