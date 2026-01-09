@@ -1,3 +1,4 @@
+import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
 export function Body() {
@@ -18,9 +19,9 @@ export function Body() {
           ))}
         </div>
         <div className="text-[#2c2c2c] flex flex-col">
-          <span className="text-[15em] h-67">Hello</span>
+          <span className="text-[15em]">Hello</span>
           <div className="flex items-center gap-1">
-            <hr className="w-4" />
+            <hr className="w-4"/>
             <span>It's D.Nova a design wizard</span>
           </div>
         </div>
