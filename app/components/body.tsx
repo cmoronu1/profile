@@ -30,7 +30,6 @@ export function Body() {
         alt="my picture"
         height={400}
         width={700}
-        objectFit="cover"
       />
     </div>
   );
