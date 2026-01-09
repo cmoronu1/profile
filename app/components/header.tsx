@@ -16,7 +16,7 @@ export function Header() {
         }
       </div>
       <div className="flex items-center">
-        <span className=" underline">Book a Call</span>
+        <span className="underline">Book a Call</span>
         <ArrowUpRight />
       </div>
     </div>
