@@ -1,10 +1,11 @@
 import { Separator } from "@/components/ui/separator";
+import { Minus, SeparatorHorizontal } from "lucide-react";
 import Image from "next/image";
 
 export function Body() {
   return (
     <div className="grid grid-cols-2">
-      <div className="flex flex-col justify-between pb-30">
+      <div className="flex flex-col">
         <div className="flex gap-5 pl-4 mt-12">
           {["200", "50"].map((member) => (
             <div key={member} className="flex align-top gap-0.5">
@@ -18,12 +19,10 @@ export function Body() {
             </div>
           ))}
         </div>
-        <div className="text-[#2c2c2c] flex flex-col">
-          <span className="text-[15em]">Hello</span>
-          <div className="flex items-center gap-1">
-            <hr className="w-4"/>
-            <span>It's D.Nova a design wizard</span>
-          </div>
+        <span className="text-[15em]">Hello</span>
+        <div className="flex items-center gap-1">
+          <Minus />
+          <span>It's D.Nova a design wizard</span>
         </div>
       </div>
       <Image
