@@ -20,9 +20,9 @@ export default function Portfolio() {
             key={member}
             onMouseOver={
               member == 1
-                ? () => setDisplay({ 1: false, 2: true, 3: true })
+                ? () => setDisplay({  1: false, 2: true, 3: true })
                 : member == 2
-                ? () => setDisplay({ 1: true, 2: false, 3: true })
+                ? () => setDisplay({  1: true, 2: false, 3: true })
                 : () => setDisplay({ 1: true, 2: true, 3: false })
             }
             onMouseLeave={() => setDisplay({ 1: true, 2: true, 3: true })}
