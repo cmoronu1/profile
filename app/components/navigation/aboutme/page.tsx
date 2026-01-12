@@ -3,6 +3,7 @@ import { GSSP_COMPONENT_MEMBER_ERROR } from "next/dist/lib/constants";
 import Image from "next/image";
 import { Experience } from "./experience";
 import { Deals } from "./deals";
+import { Footer } from "../../shared/footer";
 
 export default function AboutMe() {
   return (
@@ -65,6 +66,7 @@ export default function AboutMe() {
       </div>
       <Experience />
       <Deals />
+      <Footer />
     </div>
   );
 }

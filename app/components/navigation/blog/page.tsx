@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Footer } from "../../shared/footer";
 
 export default function Blog() {
   return (
@@ -10,8 +11,8 @@ export default function Blog() {
         <Dot size={40} />
         <span>Blogs</span>
       </div>
-      <h1 className="text-5xl">Design Insights & Trends</h1>
-      <div className="grid grid-cols-3 px-10 gap-4 pt-5">
+      <h1 className="text-5xl not-md:text-3xl">Design Insights & Trends</h1>
+      <div className="grid grid-cols-3 not-md:grid-cols-1 px-10 gap-4 pt-5">
         {[1, 2, 3].map((blog) => (
           <div
             key={blog}
@@ -43,6 +44,7 @@ export default function Blog() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }

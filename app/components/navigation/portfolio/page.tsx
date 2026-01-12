@@ -3,6 +3,7 @@ import { ArrowRight, ArrowUpRight, Dot } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Footer } from "../../shared/footer";
 
 export default function Portfolio() {
   const [display, setDisplay] = useState({ 1: true, 2: true, 3: true });
@@ -78,7 +79,7 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div className="flex justify-between text-sm pt-10 w-[15%]">
+      <div className="flex justify-between text-sm pt-10 lg:w-[15%] not-md:w-[55%] md:w-[30%]">
         <span className="text-[#808080]">Check out more</span>
         <div className="flex gap-2 items-center">
           <span>
@@ -87,6 +88,7 @@ export default function Portfolio() {
           <span className="text-[#202020]">View More</span>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
