@@ -14,7 +14,7 @@ export default function Portfolio() {
         <span>Portfolio</span>
       </div>
       <h1 className="text-5xl">Latest Works</h1>
-      <div className="grid grid-cols-3 w-full px-10 gap-4 pt-5">
+      <div className="grid grid-cols-3 not-md:grid-cols-1 w-full px-10 gap-4 pt-5">
         {[1, 2, 3].map((member) => (
           <div
             key={member}

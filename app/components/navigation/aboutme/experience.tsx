@@ -5,13 +5,13 @@ import { ArrowUpRight, Dot } from "lucide-react";
 export function Experience() {
   return (
     <div className="text-[#80807e] bg-[#fdfdfd] pt-7 w-[95%] m-auto">
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 not-md:grid-cols-1">
         <div className="text-[#4d4d4d] flex flex-col gap-2">
           <div className="flex  items-center gap-1 pl-2">
             <span className="rounded-[50%] border h-1.5 w-1.5 bg-[#2c2c2c]"></span>
             <span className="text-[0.7em]">Experiences</span>
           </div>
-          <p className="text-[2em]">Explore my design Journey</p>
+          <p className="text-[2em] not-md:text-center">Explore my design Journey</p>
         </div>
         <div className="flex flex-col gap-3">
           <p>
@@ -33,7 +33,7 @@ export function Experience() {
           "FutureTech, Berlin, Germany",
           "Expert Designs Inc, USA",
         ].map((company, index) => (
-          <div key={index} className="grid grid-cols-3 mt-5 text-[0.9em] border-b">
+          <div key={index} className="grid grid-cols-3 not-md:grid-cols-1 mt-5 text-[0.9em] border-b md:gap-8 lg:gap-0">
             <div className="flex flex-col">
               <h1 className="text-[#2e2e2e] text-xl">{company}</h1>
               <div className="flex">
