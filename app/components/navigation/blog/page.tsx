@@ -3,6 +3,7 @@ import { Dot } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "../../shared/footer";
+import { CarouselDisplay } from "../../shared/carousel-display";
 
 export default function Blog() {
   return (
@@ -11,7 +12,7 @@ export default function Blog() {
         <Dot size={40} />
         <span>Blogs</span>
       </div>
-      <h1 className="text-5xl not-md:text-3xl">Design Insights & Trends</h1>
+      {/* <h1 className="text-5xl not-md:text-3xl">Design Insights & Trends</h1>
       <div className="grid grid-cols-3 not-md:grid-cols-1 px-10 gap-4 pt-5">
         {[1, 2, 3].map((blog) => (
           <div
@@ -43,7 +44,8 @@ export default function Blog() {
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
+      <CarouselDisplay/>
       <Footer/>
     </div>
   );
