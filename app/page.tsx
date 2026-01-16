@@ -1,5 +1,6 @@
 import { Body } from "./components/body";
 import { Header } from "./components/header";
+import { Footer } from "./components/shared/footer";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Header />
         <Body />
       </div>
+      <Footer />
     </div>
   );
 }
