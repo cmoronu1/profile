@@ -19,14 +19,14 @@ export default function AboutMe() {
           </p>
           <Redo className="md:w-[90%]" size={350} color="#e8e8e8" />
         </div>
-        <div className="bg-[white]  rounded-xl w-[50%]  lg:w-[50%] not-lg:w-full flex flex-col gap-2 justify-between pl-3 py-2 m-auto">
-          <div className="relative border rounded-[50%] h-12 w-12 flex items-center justify-center bg-[black]">
-            <div className="absolute top-px border rounded-[50%] h-12 w-12 flex items-center justify-center bg-[#f7f7f7]">
+        <div className="bg-[white]  rounded-xl w-[50%]  lg:w-[50%] not-lg:w-full flex flex-col gap-2 justify-between  py-2 m-auto">
+          <div className="relative border rounded-[50%] h-12 w-12 flex items-center justify-center bg-[black] ml-3">
+            <div className="absolute top-[0.6px] border rounded-[50%] h-12 w-12 flex items-center justify-center bg-[#f7f7f7]">
               <Earth size={28} color="#2c2c2c" />
             </div>
           </div>
-          <span className="text-5xl text-[black]">120%</span>
-          <p className="text-[#797979] max-w-[90%]">
+          <span className="text-5xl text-[black] pl-3">120%</span>
+          <p className="text-[#797979] max-w-[90%] pl-3">
             Average increase in client engagement in the first 6 months
           </p>
           <div className="bg-[#a3a3a3] relative w-[65%] md:w-[75%] lg:w-[95%] m-auto md:h-[19em] lg:h-[16em] h-[16em] rounded-xl">
